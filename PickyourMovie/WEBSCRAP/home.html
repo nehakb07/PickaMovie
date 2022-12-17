@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head nonce="ZjIwOWJmNjctYjRlZC00NmJlLWE0YWEtMWQwYjg2ZjdlNWQz">
+    <title>Movie Recommendations for PickaMovie</title>
+
+  
+    <link nonce="ZjIwOWJmNjctYjRlZC00NmJlLWE0YWEtMWQwYjg2ZjdlNWQz" rel="stylesheet"
+        href="C:/Users/Chiragvs/Desktop/PickyourMovie/_next/static/css/styles.d2027524.chunk.css" />
+
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="application-name" content="PickaMovie Movies" />
+
+    <meta name="msvalidate.01" content="E172ED492B1A6A5EF246A59297EC50A4" />
+    <meta name="p:domain_verify" content="f7499e484646bd9d24c63050cfe39036" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "C:\Users\Chiragvs\Desktop\PickyourMovie\WEBSCRAP\main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+        type="text/css" />
+    <style data-styled="" data-styled-version="4.2.0" nonce="ZjIwOWJmNjctYjRlZC00NmJlLWE0YWEtMWQwYjg2ZjdlNWQz">
+        /* sc-component-id: sc-global-2223046476 */
+        @font-face {
+            font-family: 'BebasNeueBold';
+            font-weight: bold;
+            src: url('C:/Users/Chiragvs/Desktop/PickyourMovie/static/BebasNeue_Bold.otf') format('opentype');
+        }
+    </style>
+</head>
+
+<body>
+    <img src = 'https://in.images.search.yahoo.com/search/images;_ylt=Awrx_vGpPJ5jKLgBiJG9HAx.;_ylu=c2VjA3NlYXJjaARzbGsDYnV0dG9u;_ylc=X1MDMjExNDcyMzAwNQRfcgMyBGZyA21jYWZlZQRmcjIDcDpzLHY6aSxtOnNiLXRvcARncHJpZANTdERZNXF0Q1J0bUJtczlYZkhTRmtBBG5fcnNsdAMwBG5fc3VnZwMxMARvcmlnaW4DaW4uaW1hZ2VzLnNlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzE5BHF1ZXJ5A21vdmllcyUyMGltYWdlJTIwbWFydmVsBHRfc3RtcAMxNjcxMzE0NjU0?p=movies+image+marvel&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&ei=UTF-8&x=wrt&type=E211IN885G91713#id=82&iurl=https%3A%2F%2Ffsmedia.imgix.net%2F89%2F15%2F37%2F4f%2F6fbe%2F4e12%2Fb0ab%2Fcf34c5c82384%2F1065888510031083264138406362611325267236164ojpg.jpeg%3Frect%3D0%252C412%252C2048%252C1024%26auto%3Dformat%252Ccompress%26dpr%3D2%26w%3D650&action=click'>
+    <div id="__next">
+        <div class="app desktop">
+            <!--<div class="app-bg"></div>-->
+            <section>
+                <div>
+                    
+                    <div class="dummy-header"></div>
+                </div>
+                <div class="">
+                    <section class="hero-bg hero-not-full">
+                        <div class="heart-clip">
+                            <section class="hero-bg-square-container"><svg preserveAspectRatio="xMidYMid meet"
+                                    viewBox="0 0 640 580" width="640" height="580" class="hero-bg-heart"
+                                    style="transform:translateY(0%);-ms-transform:translateY(0%);-webkit-transform:translateY(0%)">
+                                    
+                                </svg></section>
+                        </div>
+                        <div class="max-width-container hero">
+                            <div
+                                style="transform:translateY(0%);-ms-transform:translateY(0%);-webkit-transform:translateY(0%)">
+                                <div
+                                    style="transform:translateY(0px);-ms-transform:translateY(0px);-webkit-transform:translateY(0px);opacity:1">
+                                    <h1 class="app-logo">PickaMovie</h1>
+                                    <p class="app-tagline"> Add two movies of any genre and PickyourMovie will give you a suggestion based on those two movies </p>
+                                </div>
+                               
+                                                    <div class = "search-container">
+                                                        <div class = "search-element">
+                                                            
+                                                            <input type = "text" class = "form-control" placeholder="Search Movie Title ..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+        
+                                                            <div class = "search-list" id = "search-list">
+                                                                <!-- list here -->
+                                                                <!-- <div class = "search-list-item">
+                                                                    <div class = "search-item-thumbnail">
+                                                                        <img src = "medium-cover.jpg">
+                                                                    </div>
+                                                                    <div class = "search-item-info">
+                                                                        <h3>Guardians of the Galaxy Vol. 2</h3>
+                                                                        <p>2017</p>
+                                                                    </div>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>                                            </div>
+                                        </div>
+                                            <div class="search-group" style="opacity:1;pointer-events:auto">
+                                                <div role="combobox" aria-haspopup="listbox"
+                                                    aria-owns="react-autowhatever-1" aria-expanded="false"
+                                                    class="react-autosuggest__container"><input type="search" value=""
+                                                        autoComplete="off" aria-autocomplete="list"
+                                                        aria-controls="react-autowhatever-1"
+                                                        class="react-autosuggest__input" tabindex="2" />
+                                                    <div id="react-autowhatever-1" role="listbox"
+                                                        class="react-autosuggest__suggestions-container"></div>
+                                            </div>
+                                        
+                                        
+                                        <div class="hero-choice-button"><button class="random-button"
+                                                style="transform:translate(-50%, 0px);-ms-transform:translate(-50%, 0px);-webkit-transform:translate(-50%, 0px)"
+                                                tabindex="3">
+                                            <div class="hero-plus"><svg preserveAspectRatio="xMidYMid meet"
+                                                    viewBox="0 0 60 60" width="60" height="60" class="hero-plus-icon">
+                                                    <g stroke="currentColor" fill="none" fill-rule="evenodd"
+                                                        stroke-linecap="square">
+                                                        <path stroke-width="15" d="M1 30.5h59"></path>
+                                                        <path stroke-width="15" d="M30.5 0v60"></path>
+                                                    </g>
+                                                </svg></div>
+                                                <div class = "search-container">
+                                                    <div class = "search-element">
+                                                        
+                                                        <input type = "text" class = "form-control" placeholder="Search Movie Title ..." id = "movie-search-box" onkeyup="findMovies1()" onclick = "findMovies1()">
+    
+                                                        <div class = "search-list" id = "search-list1">
+                                                            <!-- list here -->
+                                                            <!-- <div class = "search-list-item">
+                                                                <div class = "search-item-thumbnail">
+                                                                    <img src = "medium-cover.jpg">
+                                                                </div>
+                                                                <div class = "search-item-info">
+                                                                    <h3>Guardians of the Galaxy Vol. 2</h3>
+                                                                    <p>2017</p>
+                                                                </div>
+                                                            </div> -->
+                                                        </div>
+                                                        <script>
+                                                            // Titles: https://omdbapi.com/?s=thor&page=1&apikey=fc1fef96
+// details: http://www.omdbapi.com/?i=tt3896198&apikey=fc1fef96
+
+const movieSearchBox1 = document.getElementById('movie-search-box1');
+const searchList1 = document.getElementById('search-list1');
+const resultGrid1 = document.getElementById('result-grid1');
+
+// load movies from API
+async function loadMovies(searchTerm1){
+    const URL = `https://omdbapi.com/?s=${searchTerm1}&page=1&apikey=fc1fef96`;
+    const res = await fetch(`${URL}`);
+    const data = await res.json();
+    // console.log(data.Search);
+    if(data.Response == "True") displayMovieList(data.Search);
+}
+
+function findMovies1(){
+    let searchTerm1 = (movieSearchBox1.value).trim();
+    if(searchTerm1.length > 0){
+        searchList1.classList.remove('hide-search-list');
+        loadMovies(searchTerm1);
+    } else {
+        searchList1.classList1.add('hide-search-list1');
+    }
+}
+
+function displayMovieList1(movies){
+    searchList1.innerHTML = "";
+    for(let idx = 0; idx < movies.length; idx++){
+        let movieListItem1 = document.createElement('div');
+        movieListItem1.dataset.id = movies[idx].imdbID; // setting movie id in  data-id
+        movieListItem1.classList.add('search-list-item');
+        if(movies[idx].Poster != "N/A")
+            moviePoster = movies[idx].Poster;
+        else 
+            moviePoster = "image_not_found.png";
+
+        movieListItem1.innerHTML = `
+        <div class = "search-item-thumbnail">
+            <img src = "${moviePoster}">
+        </div>
+        <div class = "search-item-info">
+            <h3>${movies[idx].Title}</h3>
+            <p>${movies[idx].Year}</p>
+        </div>
+        `;
+        searchList1.appendChild(movieListItem1);
+    }
+    loadMovieDetails();
+}
+
+function loadMovieDetails(){
+    const searchListMovies1 = searchList1.querySelectorAll('.search-list-item1');
+    searchListMovies1.forEach(movie => {
+        movie.addEventListener('click', async () => {
+            // console.log(movie.dataset.id);
+            searchList1.classList1.add('hide-search-list');
+            movieSearchBox1.value = "";
+            const result1 = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`);
+            const movieDetails1 = await result.json();
+            // console.log(movieDetails1);
+            displayMovieDetails(movieDetails1);
+        });
+    });
+}
+
+function displayMovieDetails(details){
+    resultGrid1.innerHTML = `
+    <div class = "movie-poster">
+        <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
+    </div>
+    <div class = "movie-info">
+        <h3 class = "movie-title">${details.Title}</h3>
+        <ul class = "movie-misc-info">
+            <li class = "year">Year: ${details.Year}</li>
+            <li class = "rated">Ratings: ${details.Rated}</li>
+            <li class = "released">Released: ${details.Released}</li>
+        </ul>
+        <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
+        <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
+        <p class = "actors"><b>Actors: </b>${details.Actors}</p>
+        <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
+        <p class = "language"><b>Language:</b> ${details.Language}</p>
+        <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
+    </div>
+    `;
+}
+
+
+window.addEventListener('click', (event) => {
+    if(event.target.className != "form-control"){
+        searchList1.classList1.add('hide-search-list1');
+    }
+});
+
+                                                        </script>
+                                                    </div>
+                                                </div>  
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+            <section>
+            </section>
+                <div class="PickaMovie">
+                    <div class = "container">
+                        <div class = "result-container">
+                            <div class = "result-grid" id = "result-grid">
+                                <!-- movie information here -->
+                                <!-- <div class = "movie-poster">
+                                    <img src = "medium-cover.jpg" alt = "movie poster">
+                                </div>
+                                <div class = "movie-info">
+                                    <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
+                                    <ul class = "movie-misc-info">
+                                        <li class = "year">Year: 2017</li>
+                                        <li class = "rated">Ratings: PG-13</li>
+                                        <li class = "released">Released: 05 May 2017</li>
+                                    </ul>
+                                    <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                                    <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                                    <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                                    <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
+                                    <p class = "language"><b>Language:</b> English</p>
+                                    <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section></section>
+                <section class="results empty-night">
+                   <div class="max-width-container empty-night-description sticky-footer">
+                        <p>Enter any 2 movies, PickaMovie will show you a combination of your movies</p>
+                    </div>
+                    <footer class="empty-night-footer">
+                        <div class="footer-group"><span class="footer-group-item">Created by Nilanjana, Neha and Vinay
+                            <img class="no-separator footer-group-item"> </a><a class="footer-group-item"></a>
+                        </div>
+                        
+
+
+                    </footer>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+    
+</body>
+</html>
